@@ -1,0 +1,13 @@
+package com.logistica.domain.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;
+import org.springframework.stereotype.Repository;
+
+import com.logistica.domain.model.Cliente;
+
+@Repository
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
+
+}

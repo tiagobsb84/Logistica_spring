@@ -1,0 +1,10 @@
+package com.logistica.domain.repository;
+
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ClienteRepository  {
+
+}
