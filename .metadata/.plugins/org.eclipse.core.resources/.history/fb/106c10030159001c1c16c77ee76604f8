@@ -1,0 +1,40 @@
+package com.logistica.domain.controlle;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.apache.catalina.connector.Response;
+import org.springframework.expression.spel.support.ReflectivePropertyAccessor.OptimalPropertyAccessor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.logistica.domain.model.Cliente;
+import com.logistica.domain.repository.ClienteRepository;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@RestController
+public class ControllerCliente {
+	
+	private ClienteRepository clienterepository;
+	
+	@GetMapping("/clientes")
+	public List<Cliente> lista() {
+		return clienterepository.findAll(); 
+	}
+	
+	@GetMapping("/clientes/{clienteId}")
+	public ResponseEntity<Cliente> buscar(@PathVariable Long clienteId) {
+		Optional<Cliente> cliente = clienterepository.findById(clienteId);
+		
+		if(cliente.isPresent()) {
+			return ResponseEntity.of(cliente.get());
+		}
+		
+		return ResponseEntity.notFound().build();
+	}
+
+}
