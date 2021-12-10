@@ -1,0 +1,21 @@
+package com.logistica.domain.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
+import com.logistica.domain.model.Cliente;
+import com.logistica.domain.repository.ClienteRepository;
+
+@Service
+public class CatalogoClienteService {
+
+	private ClienteRepository clienteRepository;
+	
+	
+	public Cliente salvar(Cliente cliente) {
+		return clienteRepository.save(cliente);
+	}
+	
+	@TR
+}
