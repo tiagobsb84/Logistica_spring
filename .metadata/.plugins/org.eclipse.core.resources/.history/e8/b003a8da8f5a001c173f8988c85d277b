@@ -1,0 +1,5 @@
+package com.logistica.domain.controlle;
+
+public class EntregaController {
+
+}

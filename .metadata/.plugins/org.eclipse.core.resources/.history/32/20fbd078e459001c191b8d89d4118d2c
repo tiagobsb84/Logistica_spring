@@ -1,0 +1,29 @@
+package com.logistica.domain.model;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+public class Entrega {
+
+	@EqualsAndHashCode.Include
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private Cliente cliente;
+	private Destinatario destinatario;
+	private BigDecimal taxa;
+	private StatusEntrega status;
+	private LocalDateTime dataPedido;
+	private LocalDateTime dataFinalizada;
+}
