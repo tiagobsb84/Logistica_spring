@@ -1,0 +1,6 @@
+package com.logistica.domain.validation;
+
+public interface ValidationGroups {
+
+	public interface ClienteId{}
+}
