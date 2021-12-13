@@ -54,10 +54,6 @@ public class EntregaController {
 					entregaModel.getDestinatarioModel().setNumero(entrega.getDestinatario().getNumero());
 					entregaModel.getDestinatarioModel().setComplemento(entrega.getDestinatario().getComplemento());
 					entregaModel.getDestinatarioModel().setBairro(entrega.getDestinatario().getBairro());
-					entregaModel.setTaxa(entrega.getTaxa());
-					entregaModel.setStatus(entrega.getStatus());
-					entregaModel.setDataPedido(entrega.getDataPedido());
-					entregaModel.setDataFinalizacao(entrega.getDataFinalizacao());
 					
 					return ResponseEntity.ok(entregaModel);
 				}).orElse(ResponseEntity.notFound().build());
