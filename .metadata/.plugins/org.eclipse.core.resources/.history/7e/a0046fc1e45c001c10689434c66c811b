@@ -1,0 +1,6 @@
+package com.logistica.model;
+
+public class EntradaInput {
+
+	private ClienteIdInput cliente;
+}

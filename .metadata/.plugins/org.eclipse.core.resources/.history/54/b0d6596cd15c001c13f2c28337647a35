@@ -1,0 +1,5 @@
+package com.logistica.domain.assembly;
+
+public class EntregaAssembly {
+
+}

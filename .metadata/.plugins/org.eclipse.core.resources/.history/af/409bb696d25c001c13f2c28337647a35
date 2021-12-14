@@ -1,0 +1,20 @@
+package com.logistica.domain.assembly;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
+
+import com.logistica.domain.model.Entrega;
+import com.logistica.model.EntregaModel;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@Component
+public class EntregaAssembly {
+
+	private ModelMapper modelMapper;
+	
+	public EntregaModel toMapper(Entrega entrega) {
+		return modelMapper.map(entrega, EntregaModel.class);
+	}
+}
