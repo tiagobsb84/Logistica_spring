@@ -1,0 +1,15 @@
+package com.logistica.domain.service;
+
+import com.logistica.domain.exception.NegocioException;
+import com.logistica.domain.model.Entrega;
+import com.logistica.domain.repository.EntregaRepository;
+
+public class BuscarEntregaService {
+
+	private EntregaRepository entregaRepository;
+	
+	public Entrega buscar(Long entradaId) {
+		return entregaRepository.findById(entradaId)
+				.orElseThrow(() -> new NegocioException("Entrega não encontrada."));
+	}
+}

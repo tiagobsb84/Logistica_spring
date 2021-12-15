@@ -2,3 +2,6 @@
 1639425002308	Rename package 'com.logistica.common'
 1639482495332	Rename package 'com.logistica.domain.assembly'
 1639482522460	Rename compilation unit 'EntregaAssembly.java'
+1639502716964	Rename resource 'cria-tabela-ocorrencia.sql'
+1639516453712	Rename type 'RegistroOcorrenciaService'
+1639516550624	Rename type 'RegistroOcorrenciaController'

@@ -1,0 +1,18 @@
+package com.logistica.domain.service;
+
+import javax.transaction.Transactional;
+
+import com.logistica.domain.model.Entrega;
+import com.logistica.domain.model.Ocorrencia;
+
+public class ResgistreOcorreciaService {
+
+	private BuscarEntregaService buscarEntregaService;
+	
+	@Transactional
+	public Ocorrencia registrar(Long entregaId, String descricao) {
+		Entrega entrega = buscarEntregaService.buscar(entregaId);
+		
+		return entrega.adicionarOcorrencia(descricao);
+	}
+}
