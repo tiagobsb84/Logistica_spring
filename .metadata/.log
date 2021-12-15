@@ -3412,3 +3412,81 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 22:29:40.535
 !MESSAGE executing callback sts4.classpath.LutUABvB SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:18.969
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LutUABvB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:18.969
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.LutUABvB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:18.970
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:18.970
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LutUABvB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:28.441
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:28.441
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@288b534[org.springframework.tooling.boot.ls:1.28.0.202109130547(id=562)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:28.442
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-12-14 23:00:30.514
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.830
+!MESSAGE Boot LS startup time from start to initialized: 3387ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.918
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SghwMglVisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.919
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.920
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.920
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.921
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.921
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SghwMglV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.928
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.934
+!MESSAGE buffering callback sts4.classpath.SghwMglV logistica false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:31.935
+!MESSAGE executing callback sts4.classpath.SghwMglV 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:00:32.340
+!MESSAGE executing callback sts4.classpath.SghwMglV SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:12:39.257
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SghwMglV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:12:39.258
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.SghwMglV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:12:39.259
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-14 23:12:39.259
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SghwMglV => OK
